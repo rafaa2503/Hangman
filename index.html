@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+<head>
+    <meta charset="Utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hangman | Galgenmann | Rafaa EL Sherkasi"/>
+    <meta name="author" content="Rafaa El Sherkasi" />
+    <meta name="description" content="Auf meiner Webseite können sie viele Informationen über mich erfahren."/>	    
+        
+        
+        <title>
+            Hangman
+	    </title>
+        <link rel="stylesheet" href="stylesheet.css" type="text/css" >
+
+</head>
+
+    <body>
+            <div class="topnav">
+                
+            </a><img class="banner-pic" src="bilder/Banner.png" alt="Banner"></a></div>
+            </div>       
+    </header>
+
+    <button id="resetbtn" class="btn btn-info" onClick="reset()">Reset</button>
+    <button id="myBtn">Regeln</button>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>platzhalter</h2>
+        </div>
+
+        <div class="modal-body">
+          <img class="pngregeln" src="./bilder/regeln.png" alt="Regeln">
+        </div>
+
+        <div class="modal-footer">
+          <h2>platzhalter</h2>
+        </div>
+      </div>
+    </div>
+
+<div class="container">
+  <h1 class="text-center">Errate die Programmiersprache:</h1>
+  <div class="text-center">Fehler: <span id='fehler'>0</span> of <span id='maxFehler'></span></div>
+  <div class="text-center">
+    <img id='hangmanPic' src="./bilder/0.png" alt="bild">
+    <p id="wordSpotlight">The word to be geraten goes here</p>
+    <div id="keyboard"></div>
+    <button class="btn btn-info" onClick="reset()">Reset</button>
+  </div> 
+</div>
+
+<script src='hangman.js'></script>
+</body>
+</html>
